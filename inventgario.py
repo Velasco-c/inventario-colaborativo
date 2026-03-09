@@ -16,7 +16,7 @@ def listar_Productos():
     print("\n" + "="*65)
     print(f"{'Nombre':<15} | {'Precio':<6} | {'Cantidad':<10}")
     print("-" * 65)
-    for p in products:
+    for p in productos:
         Nombre = p["Nombre"]
         Precio = p["Precio"]
         Cantidad = p["Cantidad"]

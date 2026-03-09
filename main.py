@@ -18,6 +18,6 @@ while True:
     elif opc == 1: 
         agregar_producto()
     elif opc == 2: 
-        listar_Productos()
+        print("Bro")
     else: 
         print("opcion invalida")
