@@ -1,3 +1,5 @@
+from inventgario import *
+
 def menu_principal(): 
     menu = """ 
     1. Agregar producto 
@@ -14,7 +16,7 @@ while True:
         print("BYE bye ")
         break
     elif opc == 1: 
-        print("Hola")
+        agregar_producto()
     elif opc == 2: 
         print("Bro")
     else: 
