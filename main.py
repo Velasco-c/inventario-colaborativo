@@ -1,4 +1,4 @@
-from inventgario import *
+from inventgario import agregar_producto,listar_Productos,entero
 
 def menu_principal(): 
     menu = """ 
@@ -10,7 +10,7 @@ def menu_principal():
     
 while True: 
     menu_principal()
-    opc = int(input("Ingrese alguna de las opciones: "))
+    opc = entero("Ingrese alguna de las opciones: ")
     
     if opc == 3:
         print("BYE bye ")
@@ -18,6 +18,6 @@ while True:
     elif opc == 1: 
         agregar_producto()
     elif opc == 2: 
-        print("Bro")
+        listar_Productos()
     else: 
         print("opcion invalida")

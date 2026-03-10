@@ -1,14 +1,32 @@
 productos = []
 
+def entero(Mensaje):
+    while True:
+        try:
+            Numero = int(input(Mensaje))
+            return Numero
+        except ValueError as e:
+            print(f"Tipo de error es : {e}")
+
+def decimal(Mensaje):
+    while True:
+        try:
+            Numero = float(input(Mensaje))
+            return Numero
+        except ValueError as e:
+            print(f"Tipo de error es : {e}")
+        
 def agregar_producto():
-    Nombre = input("Ingresa el nombre del producto: ")
-    Precio = int(input("Ingresa el precio del producto: "))
-    Cantidad = int(input("Ingrese la cantidad del producto: "))
-    almacena = {
-        "Nombre": Nombre,
-        "Precio": Precio,
-        "Cantidad": Cantidad
-    }
+    Productos_contenido = entero("Ingrese la cantida de productos a agregar: ")
+    for i in range(0,Productos_contenido):
+        Nombre = input("Ingresa el nombre del producto: ")
+        Precio = decimal("Ingresa el precio del producto: ")
+        Cantidad = entero("Ingrese la cantidad del producto: ")
+        almacena = {
+            "Nombre": Nombre,
+            "Precio": Precio,
+            "Cantidad": Cantidad
+        }
     productos.append(almacena)
     print("Se agrego correctamente")
    
